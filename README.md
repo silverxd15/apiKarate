@@ -25,8 +25,8 @@ El pipeline realiza los siguientes pasos:
 
 Variables disponibles:
 
-* `KARATE_ENV` (por defecto `qa`)
-* `KARATE_TAGS` (por defecto `@smoke`)
+* `KARATE_ENV` (por defecto `cert`)
+* `KARATE_TAGS` (por defecto `@regresion`)
 * `KARATE_THREADS` (por defecto `4`)
 
 Puedes sobreescribirlas definiendo variables en tu job de Jenkins o a nivel de multibranch pipeline.
