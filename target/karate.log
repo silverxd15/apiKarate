@@ -1,8 +1,8 @@
-21:17:40.161 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @regresion
-21:17:40.246 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': cert
-21:17:40.331 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-21:17:41.273 [main] INFO  com.intuit.karate - karate.env system property was: cert 
-21:17:41.540 [main] DEBUG com.intuit.karate - request:
+21:28:14.331 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @regresion
+21:28:14.401 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': cert
+21:28:14.470 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:28:15.320 [main] INFO  com.intuit.karate - karate.env system property was: cert 
+21:28:15.610 [main] DEBUG com.intuit.karate - request:
 1 > POST https://todo.ly/api/projects.json
 1 > Authorization: Basic bGVvbmFyZDRAam1ldGVyLmNvbToxMjM0NTY=
 1 > Content-Type: application/json; charset=UTF-8
@@ -13,25 +13,25 @@
 1 > Accept-Encoding: gzip,deflate
 {"Content":"Proyecto Karate Automatizado","Icon":4}
 
-21:17:42.900 [main] DEBUG com.intuit.karate - response time in milliseconds: 1353
+21:28:16.566 [main] DEBUG com.intuit.karate - response time in milliseconds: 952
 1 < 200
 1 < Cache-Control: no-cache, no-store, must-revalidate
 1 < Pragma: no-cache
 1 < Content-Type: application/json; charset=utf-8
 1 < Expires: -1
 1 < Server: Microsoft-IIS/8.0
-1 < Set-Cookie: ASP.NET_SessionId=toia02lpdywywmnf4omspqqs; path=/; HttpOnly; SameSite=Lax
+1 < Set-Cookie: ASP.NET_SessionId=lma2cgaylydlcofq0ynryujz; path=/; HttpOnly; SameSite=Lax
 1 < X-AspNetMvc-Version: 2.0
 1 < X-AspNet-Version: 4.0.30319
 1 < X-Powered-By: ASP.NET
-1 < Date: Wed, 15 Oct 2025 02:15:48 GMT
+1 < Date: Wed, 15 Oct 2025 02:26:22 GMT
 1 < Content-Length: 418
-{"Id":4479884,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":288,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760494548479)\/","LastUpdatedDate":"\/Date(1760494548480)\/","Deleted":false,"SyncClientCreationId":null}
+{"Id":4479886,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":290,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760495182171)\/","LastUpdatedDate":"\/Date(1760495182170)\/","Deleted":false,"SyncClientCreationId":null}
 
-21:17:42.916 [main] INFO  com.intuit.karate - [print] 4479884 
-21:17:42.928 [main] INFO  com.intuit.karate - karate.env system property was: cert 
-21:17:42.940 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:todoLy/testTodoLy.feature - call by tag at line 8: CREAR-PROYECTO
-21:17:42.945 [main] DEBUG com.intuit.karate - request:
+21:28:16.582 [main] INFO  com.intuit.karate - [print] 4479886 
+21:28:16.593 [main] INFO  com.intuit.karate - karate.env system property was: cert 
+21:28:16.599 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:todoLy/testTodoLy.feature - call by tag at line 8: CREAR-PROYECTO
+21:28:16.605 [main] DEBUG com.intuit.karate - request:
 1 > POST https://todo.ly/api/projects.json
 1 > Authorization: Basic bGVvbmFyZDRAam1ldGVyLmNvbToxMjM0NTY=
 1 > Content-Type: application/json; charset=UTF-8
@@ -42,24 +42,24 @@
 1 > Accept-Encoding: gzip,deflate
 {"Content":"Proyecto Karate Automatizado","Icon":4}
 
-21:17:43.556 [main] DEBUG com.intuit.karate - response time in milliseconds: 609
+21:28:17.147 [main] DEBUG com.intuit.karate - response time in milliseconds: 541
 1 < 200
 1 < Cache-Control: no-cache, no-store, must-revalidate
 1 < Pragma: no-cache
 1 < Content-Type: application/json; charset=utf-8
 1 < Expires: -1
 1 < Server: Microsoft-IIS/8.0
-1 < Set-Cookie: ASP.NET_SessionId=0y4paviyinj2hvofqungdesm; path=/; HttpOnly; SameSite=Lax
+1 < Set-Cookie: ASP.NET_SessionId=rwj3v1ayato3ff2wiy20fj2a; path=/; HttpOnly; SameSite=Lax
 1 < X-AspNetMvc-Version: 2.0
 1 < X-AspNet-Version: 4.0.30319
 1 < X-Powered-By: ASP.NET
-1 < Date: Wed, 15 Oct 2025 02:15:48 GMT
+1 < Date: Wed, 15 Oct 2025 02:26:22 GMT
 1 < Content-Length: 418
-{"Id":4479885,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":289,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760494549150)\/","LastUpdatedDate":"\/Date(1760494549150)\/","Deleted":false,"SyncClientCreationId":null}
+{"Id":4479887,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":291,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760495182764)\/","LastUpdatedDate":"\/Date(1760495182763)\/","Deleted":false,"SyncClientCreationId":null}
 
-21:17:43.562 [main] INFO  com.intuit.karate - [print] 4479885 
-21:17:43.572 [main] DEBUG com.intuit.karate - request:
-1 > GET https://todo.ly/api/projects/4479885.json
+21:28:17.150 [main] INFO  com.intuit.karate - [print] 4479887 
+21:28:17.166 [main] DEBUG com.intuit.karate - request:
+1 > GET https://todo.ly/api/projects/4479887.json
 1 > Authorization: Basic bGVvbmFyZDRAam1ldGVyLmNvbToxMjM0NTY=
 1 > Host: todo.ly
 1 > Connection: Keep-Alive
@@ -67,18 +67,18 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-21:17:44.195 [main] DEBUG com.intuit.karate - response time in milliseconds: 622
+21:28:17.794 [main] DEBUG com.intuit.karate - response time in milliseconds: 628
 1 < 200
 1 < Cache-Control: no-cache, no-store, must-revalidate
 1 < Pragma: no-cache
 1 < Content-Type: application/json; charset=utf-8
 1 < Expires: -1
 1 < Server: Microsoft-IIS/8.0
-1 < Set-Cookie: ASP.NET_SessionId=y0ryz0lqry1tz2xlyk2xuas4; path=/; HttpOnly; SameSite=Lax
+1 < Set-Cookie: ASP.NET_SessionId=1wgbt4crwbtqg2bljnzwxhg2; path=/; HttpOnly; SameSite=Lax
 1 < X-AspNetMvc-Version: 2.0
 1 < X-AspNet-Version: 4.0.30319
 1 < X-Powered-By: ASP.NET
-1 < Date: Wed, 15 Oct 2025 02:15:49 GMT
+1 < Date: Wed, 15 Oct 2025 02:26:23 GMT
 1 < Content-Length: 418
-{"Id":4479885,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":289,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760494549789)\/","LastUpdatedDate":"\/Date(1760494549150)\/","Deleted":false,"SyncClientCreationId":null}
+{"Id":4479887,"Content":"Proyecto Karate Automatizado","ItemsCount":0,"Icon":4,"ItemType":2,"ParentId":null,"Collapsed":false,"ItemOrder":291,"Children":[],"IsProjectShared":false,"ProjectShareOwnerName":null,"ProjectShareOwnerEmail":null,"IsShareApproved":false,"IsOwnProject":true,"LastSyncedDateTime":"\/Date(1760495183403)\/","LastUpdatedDate":"\/Date(1760495182763)\/","Deleted":false,"SyncClientCreationId":null}
 

@@ -7,8 +7,8 @@ pipeline {
   }
 
   environment {
-    KARATE_ENV = 'qa'
-    KARATE_TAGS = '@smoke'
+    KARATE_ENV = 'cert'
+    KARATE_TAGS = '@regresion'
     KARATE_THREADS = '4'
   }
 
