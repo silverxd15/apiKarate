@@ -26,7 +26,7 @@ pipeline {
     stage('Run Karate Tests') {
       steps {
         script {
-          def karateOpts = "--tags ${env.KARATE_TAGS} --threads ${env.KARATE_THREADS}"
+          def karateOpts = "--tags ${env.KARATE_TAGS} --threads ${env.KARATE_THREADS} --format cucumber:target/cucumber-reports/cucumber.json"
           if (isUnix()) {
             sh "mvn -B -q -Dkarate.env=${env.KARATE_ENV} -Dkarate.options=\"${karateOpts}\" test"
           } else {
@@ -42,6 +42,7 @@ pipeline {
           def surefirePattern = isUnix() ? 'target/surefire-reports/*.xml' : 'target\\surefire-reports\\*.xml'
           junit allowEmptyResults: true, testResults: surefirePattern
         }
+        cucumber buildStatus: 'FAILURE', fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/cucumber-reports', missingIncludes: 'SKIP_BUILD'
         publishHTML(
           target: [
             reportDir: 'target/karate-reports',
