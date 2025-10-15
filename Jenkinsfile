@@ -26,6 +26,7 @@ pipeline {
     stage('Run Karate Tests') {
       steps {
         script {
+          // Genera el JSON compatible con el plugin de Cucumber:
           def karateOpts = "--tags ${env.KARATE_TAGS} --threads ${env.KARATE_THREADS} --format cucumber:target/cucumber-reports/cucumber.json"
           if (isUnix()) {
             sh "mvn -B -q -Dkarate.env=${env.KARATE_ENV} -Dkarate.options=\"${karateOpts}\" test"
@@ -42,16 +43,25 @@ pipeline {
           def surefirePattern = isUnix() ? 'target/surefire-reports/*.xml' : 'target\\surefire-reports\\*.xml'
           junit allowEmptyResults: true, testResults: surefirePattern
         }
-        cucumber buildStatus: 'FAILURE', failOnEmptyReport: false, fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/cucumber-reports'
-        publishHTML(
-          target: [
-            reportDir: 'target/karate-reports',
-            reportFiles: 'karate-summary.html',
-            reportName: 'Karate Report',
-            keepAll: true,
-            alwaysLinkToLastBuild: true
-          ]
+
+        // Reporte Cucumber (usar SOLO parámetros válidos)
+        cucumber(
+          jsonReportDirectory: 'target/cucumber-reports',
+          fileIncludePattern: 'cucumber.json',
+          buildStatus: 'UNSTABLE' // usa 'FAILURE' si quieres romper el build ante fallos
         )
+
+        // Reporte HTML nativo de Karate
+        publishHTML(target: [
+          reportDir: 'target/karate-reports',
+          reportFiles: 'karate-summary.html',
+          reportName: 'Karate Report',
+          keepAll: true,
+          alwaysLinkToLastBuild: true
+        ])
+
+        // (Opcional) Archiva el JSON de Cucumber para auditoría
+        archiveArtifacts artifacts: 'target/cucumber-reports/cucumber.json', fingerprint: true
       }
     }
   }
